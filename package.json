@@ -4,7 +4,7 @@
   "description": "Charlie's Config Files",
   "main": "index.js",
   "scripts": {
-    "start": "sudo cp ./configs/* ~/ ; sudo cp ./configs/* /root/",
+    "start": "cp -R ./configs/. ~/ ; sudo cp -R ./configs/. /root/",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
