@@ -1,0 +1,20 @@
+{
+  "name": "config-repo",
+  "version": "1.0.0",
+  "description": "Charlie's Config Files",
+  "main": "index.js",
+  "scripts": {
+    "start": "sudo cp ./configs/* ~/ ; sudo cp ./configs/* /root/",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CSellers720/charlie-config-files.git"
+  },
+  "author": "Charlie_Codes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CSellers720/charlie-config-files/issues"
+  },
+  "homepage": "https://github.com/CSellers720/charlie-config-files#readme"
+}
