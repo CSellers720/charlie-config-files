@@ -80,9 +80,10 @@ if [ -x /usr/bin/dircolors ]; then
     alias vdir='vdir --color=always'
     alias vim='nvim'
     alias vi='nvim'
-    alias espc ='vscodium ~/.config/espanso'
-    alias esp ='cd ~/.config/espanso' 
+    alias espc='vscodium ~/.config/espanso'
+    alias esp='cd ~/.config/espanso' 
 
+    alias temps='watch -n 2 sensors'
     alias grep='grep --color=auto'
     alias fgrep='fgrep --color=auto'
     alias egrep='egrep --color=auto'
