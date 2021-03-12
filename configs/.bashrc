@@ -83,7 +83,7 @@ if [ -x /usr/bin/dircolors ]; then
     alias espc='vscodium ~/.config/espanso'
     alias esp='cd ~/.config/espanso' 
 
-    alias temps='watch -n 2 sensors'
+    alias temps='watch -n 1 sensors'
     alias grep='grep --color=auto'
     alias fgrep='fgrep --color=auto'
     alias egrep='egrep --color=auto'
