@@ -1,0 +1,59 @@
+#!/bin/bash
+
+mkdir configs
+mkdir configs/.config
+
+exists=false
+
+check_file () {
+FILE=$1
+if [[ -f $FILE ]]; then
+	exists=true
+else
+	exists=false
+fi
+}
+
+check_dir () {
+if [[ -d $1 ]]; then
+	exists=true
+else
+	exists=false
+fi
+}
+
+cp_file () {
+if [ $exists ]; then
+	echo "$1 found. Copying to configs folder."
+	sudo cp $1 ./configs/
+else
+	echo "$1 not found."
+fi
+}
+
+cp_dir () {
+if [ $exists ]; then
+	echo "$1 found. Copying to config folder."
+	if [ $2 == true ]; then
+		sudo cp -r $1 configs/.config/
+	else
+		sudo cp -r $1 configs/
+	fi
+fi
+}
+
+process_file () {
+check_file $1
+cp_file $1
+}
+
+process_dir () {
+check_dir $1
+cp_dir $1 $2
+}
+
+process_file ~/.bashrc
+process_dir ~/.config/nvim true 
+process_dir ~/.vim false
+process_file ~/.nethackrc
+process_file ~/.vimrc
