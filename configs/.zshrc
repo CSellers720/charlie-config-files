@@ -1,4 +1,4 @@
-alias ls='ls --color=always -a'
+alias ls='ls -A -G'
 alias dir='dir --color=always'
 alias vdir='vdir --color=always'
 alias vim='vim'
