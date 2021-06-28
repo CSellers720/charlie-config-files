@@ -1,9 +1,9 @@
 alias ls='ls --color=always -a'
 alias dir='dir --color=always'
 alias vdir='vdir --color=always'
-alias vim='nvim'
-alias vi='nvim'
-alias espc='vscodium ~/.config/espanso'
+alias vim='vim'
+alias vi='vim'
+alias espc='vim ~/.config/espanso'
 alias esp='cd ~/.config/espanso'
 alias qauth='mwinit -o && kinit'
 
