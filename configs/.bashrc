@@ -82,6 +82,7 @@ if [ -x /usr/bin/dircolors ]; then
     alias vi='nvim'
     alias espc='vscodium ~/.config/espanso'
     alias esp='cd ~/.config/espanso' 
+    alias qauth='mwinit -o && kinit'
 
     alias temps='watch -n 1 sensors'
     alias grep='grep --color=auto'
@@ -97,7 +98,6 @@ if [ -x /usr/bin/dircolors ]; then
     alias 'gch'='git checkout'
     alias 'gd'='git diff'
     alias 'gr'='git reset'
-fi
 
 # colored GCC warnings and errors
 #export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
